@@ -1,0 +1,52 @@
+[
+    {
+        "Id": "firebolt",
+        "Name": "Firebolt",
+        "Rarity": "Common"
+    },
+    {
+        "Id": "arcane_ray",
+        "Name": "Arcane Ray",
+        "Rarity": "Uncommon"
+    },
+    {
+        "Id": "time_warp",
+        "Name": "Time Warp",
+        "Rarity": "Rare"
+    },
+    {
+        "Id": "healing_salve",
+        "Name": "Healing Salve",
+        "Rarity": "Common"
+    },
+    {
+        "Id": "goblin_strike",
+        "Name": "Goblin Strike",
+        "Rarity": "Common"
+    },
+    {
+        "Id": "mana_drain",
+        "Name": "Mana Drain",
+        "Rarity": "Uncommon"
+    },
+    {
+        "Id": "giant_growth",
+        "Name": "Giant Growth",
+        "Rarity": "Common"
+    },
+    {
+        "Id": "lightning_bolt",
+        "Name": "Lightning Bolt",
+        "Rarity": "Uncommon"
+    },
+    {
+        "Id": "counterspell",
+        "Name": "Counterspell",
+        "Rarity": "Rare"
+    },
+    {
+        "Id": "divination",
+        "Name": "Divination",
+        "Rarity": "Common"
+    }
+]
