@@ -13,4 +13,9 @@ public class Card : ScriptableObject
     public int Power => 1;
     public int Toughness => 1;
     // Future: ability definitions
+
+    public string GetTooltipText()
+    {
+        return "";
+    }
 }

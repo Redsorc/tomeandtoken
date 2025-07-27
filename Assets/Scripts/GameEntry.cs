@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using System.Collections.Generic;
 
 public class GameEntry : MonoBehaviour
@@ -15,7 +18,7 @@ public class GameEntry : MonoBehaviour
         UIManager.Instance.BindButton(quitButton, () => Application.Quit());
     }
 
-    void OnStartDraftClicked()
+    public void OnStartDraftClicked()
     {
         // Intro dialogue lines
         List<string> intro = new List<string> {
@@ -30,5 +33,14 @@ public class GameEntry : MonoBehaviour
     {
         UIManager.Instance.ShowScreen(ScreenID.Draft);
         draftUIController.BeginDraft();
+    }
+
+    public void OnQuitClicked()
+    {
+    #if UNITY_EDITOR
+            EditorApplication.isPlaying = false;   // stops Play Mode in the Editor
+    #else
+            Application.Quit();                    // quits the built player
+    #endif
     }
 }
